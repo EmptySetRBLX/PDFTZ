@@ -64,7 +64,7 @@ local function drawZombiesToBody(body)
 	local bodies = bodyUtils.getDeadBodiesInSquares(squaresToCheck)
 
 	local area = #bodies * DRAW_AREA_PER_NEARBY_CORPSE()
-	local radius = math.sqrt(a/math.pi)
+	local radius = math.sqrt(area/math.pi)
 
 	if radius < MIN_HORDE_DRAW() then
 		return false
