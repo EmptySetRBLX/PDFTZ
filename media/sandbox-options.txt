@@ -1,0 +1,49 @@
+VERSION = 1,
+
+option PDFTZ.HordesEnabled
+{
+	type = boolean, default = true,
+	page = PDFTZ, translation = HordesEnabled,
+}
+
+option PDFTZ.SpookyScarySkeletons
+{
+	type = boolean, default = false,
+	page = PDFTZ, translation = SpookyScarySkeletons,
+}
+
+option PDFTZ.MaxTimeToEatBody
+{
+	type = integer, min = 10, max = 2880, default = 720,
+	page = PDFTZ, translation = MaxTimeToEatBody,
+}
+
+option PDFTZ.CorpseDrawWeight
+{
+	type = integer, min = 1, max = 50, default = 20,
+	page = PDFTZ, translation = CorpseDrawWeight,
+}
+
+option PDFTZ.MinHordeDrawWeight
+{
+	type = integer, min = 50, max = 215, default = 60,
+	page = PDFTZ, translation = MinHordeDrawWeight,
+}
+
+option PDFTZ.MinHordeDrawWaitTime
+{
+	type = integer, min = 10, max = 2880, default = 360,
+	page = PDFTZ, translation = MinHordeDrawWaitTime,
+}
+
+option PDFTZ.MaxHordeDrawWaitTime
+{
+	type = integer, min = 10, max = 2880, default = 720,
+	page = PDFTZ, translation = MaxHordeDrawWaitTime,
+}
+
+option PDFTZ.HordeGlobalCooldown
+{
+	type = integer, min = 10, max = 2880, default = 60,
+	page = PDFTZ, translation = HordeGlobalCooldown,
+}

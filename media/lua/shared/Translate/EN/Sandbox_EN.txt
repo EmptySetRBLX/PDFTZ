@@ -1,0 +1,19 @@
+Sandbox_EN = {
+	Sandbox_PDFTZ = "Please Don't Feed The Zombies Options",
+	Sandbox_HordesEnabled = "Are Hordes Enabled",
+	Sandbox_HordesEnabled_tooltip = "When disabled, zombies will only eat corpses if they happen to wander nearby and see it",
+    Sandbox_SpookyScarySkeletons = "Spooky Scary Skeletons",
+	Sandbox_SpookyScarySkeletons_tooltip = "Sends shivers down your spine, while they rip it out of you (Warning - stupid, funny, hard)",
+    Sandbox_MaxTimeToEatBody = "Max Minutes to Eat a Body",
+	Sandbox_MaxTimeToEatBody_tooltip = "The amount of in game minutes it takes for a lone zombie to eat a corpse",
+    Sandbox_CorpseDrawWeight = "Horde Draw Radius Per Corpse",
+	Sandbox_CorpseDrawWeight_tooltip = "Amount of nearby corpses * THIS VALUE = the radius of the world sound when a horde event triggers",
+    Sandbox_MinHordeDrawWeight = "Minimum Horde Event Radius",
+	Sandbox_MinHordeDrawWeight_tooltip = "A body pile must have a horde weight of at least this value in order for a horde event to trigger (minimum is Java side, can't go lower)",
+    Sandbox_MinHordeDrawWaitTime = "Minimum Time Body Exists Before Horde",
+	Sandbox_MinHordeDrawWaitTime_tooltip = "Once a body has been on the ground this many in game minutes, it could start to draw a horde",
+    Sandbox_MaxHordeDrawWaitTime = "Maximum Time Body Exists Before Horde",
+	Sandbox_MaxHordeDrawWaitTime_tooltip = "Once a body has been on the ground this many in game minutes, it will attempt to draw a horde at least once",
+	Sandbox_HordeGlobalCooldown = "Horde Global Cooldown",
+	Sandbox_HordeGlobalCooldown_tooltip = "Minimum in game minutes that must pass globally before any new hordes can form"
+}
