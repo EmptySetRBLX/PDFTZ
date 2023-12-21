@@ -8,7 +8,7 @@ local MAX_TICKS_TO_WAIT_FOR_CORPSE = 400
 local ZOMBIE_KILLED_CORPSE_SEARCH_RANGE = 3
 local ZOMBIE_KILLED_CORPSE_SEARCH_DEPTH = 1
 
-function DRAW_RADIUS_PER_NEARBY_CORPSE()
+function DRAW_AREA_PER_NEARBY_CORPSE()
 	return getSandboxOptions():getOptionByName("PDFTZ.CorpseDrawWeight"):getValue()
 end
 
@@ -63,7 +63,8 @@ local function drawZombiesToBody(body)
 	local squaresToCheck = bodyUtils.getSurroundingSquares(square, NEARBY_CORPSE_HORDE_SEARCH_RANGE, NEARBY_CORPSE_HORDE_SEARCH_DEPTH)
 	local bodies = bodyUtils.getDeadBodiesInSquares(squaresToCheck)
 
-	local radius = #bodies * DRAW_RADIUS_PER_NEARBY_CORPSE()
+	local area = #bodies * DRAW_AREA_PER_NEARBY_CORPSE()
+	local radius = math.sqrt(area/math.pi)
 
 	if radius < MIN_HORDE_DRAW() then
 		return false
